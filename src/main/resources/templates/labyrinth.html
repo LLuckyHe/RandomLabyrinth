@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>random labyrinth</title>
+</head>
+<body>
+    <table style="background-color: black">
+        <tr th:each="items,itemsStat:${itemlist}">
+            <td th:each="item,itemStat:${items}" th:style="${item}">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

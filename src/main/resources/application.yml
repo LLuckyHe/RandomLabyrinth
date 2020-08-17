@@ -1,0 +1,8 @@
+server:
+  port: 8400
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
